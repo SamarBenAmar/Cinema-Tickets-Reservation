@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<servlet>
+		<servlet-name>reservation</servlet-name>
+		<servlet-class>com.exam.servlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reservation</servlet-name>
+		<url-pattern>/reservation</url-pattern>			
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>com.exam.servlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Acueil</servlet-name>
+		<url-pattern>/Accueil</url-pattern>			
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Seance</servlet-name>
+		<servlet-class>com.exam.servlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Seance</servlet-name>
+		<url-pattern>/seances</url-pattern>			
+	</servlet-mapping>
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<inlude-perlude>/WEB-INF/taglibs.jsp</inlude-perlude>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>
